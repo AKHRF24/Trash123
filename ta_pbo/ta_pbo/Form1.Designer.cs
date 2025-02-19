@@ -27,13 +27,13 @@ namespace ta_pbo
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
             this.panel4 = new System.Windows.Forms.Panel();
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,6 +51,7 @@ namespace ta_pbo
             // Nama
             // 
             this.Nama.Location = new System.Drawing.Point(753, 165);
+            this.Nama.Multiline = true;
             this.Nama.Name = "Nama";
             this.Nama.Size = new System.Drawing.Size(251, 22);
             this.Nama.TabIndex = 0;
@@ -68,7 +69,7 @@ namespace ta_pbo
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(735, 94);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(393, 255);
+            this.panel1.Size = new System.Drawing.Size(393, 270);
             this.panel1.TabIndex = 5;
             // 
             // comboBox1
@@ -85,6 +86,7 @@ namespace ta_pbo
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(18, 158);
+            this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(251, 22);
             this.textBox2.TabIndex = 1;
@@ -94,6 +96,7 @@ namespace ta_pbo
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(18, 115);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(251, 22);
             this.textBox1.TabIndex = 8;
@@ -112,10 +115,11 @@ namespace ta_pbo
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Stencil", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(3, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 34);
+            this.label1.Size = new System.Drawing.Size(129, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "ISI DATA";
             // 
@@ -138,43 +142,6 @@ namespace ta_pbo
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1194, 73);
             this.panel2.TabIndex = 6;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.button4);
-            this.panel3.Controls.Add(this.textBox3);
-            this.panel3.Location = new System.Drawing.Point(12, 94);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(672, 255);
-            this.panel3.TabIndex = 7;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(228, 6);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(80, 26);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Cari";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(318, 6);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(80, 26);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Reset";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(16, 6);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(206, 22);
-            this.textBox3.TabIndex = 0;
-            this.textBox3.Text = "Seacrh";
             // 
             // linkLabel3
             // 
@@ -220,6 +187,44 @@ namespace ta_pbo
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Laporan & Statistik";
             this.linkLabel1.UseMnemonic = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel3.Controls.Add(this.button3);
+            this.panel3.Controls.Add(this.button4);
+            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Location = new System.Drawing.Point(12, 94);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(672, 255);
+            this.panel3.TabIndex = 7;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(228, 6);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(80, 26);
+            this.button3.TabIndex = 1;
+            this.button3.Text = "Cari";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(318, 6);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(80, 26);
+            this.button4.TabIndex = 8;
+            this.button4.Text = "Reset";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(16, 6);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(206, 26);
+            this.textBox3.TabIndex = 0;
+            this.textBox3.Text = "Seacrh";
             // 
             // gMapControl1
             // 
